@@ -1,0 +1,19 @@
+.emptyList {
+  padding: var(--space-10) 0;
+  border-top: 1px solid var(--gray-400);
+  border-radius: 0.8rem;
+  color: var(--gray-300);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.emptyList > img {
+  margin-bottom: var(--space-4);
+}
+
+.emptyList strong {
+  line-height: 1.6;
+}

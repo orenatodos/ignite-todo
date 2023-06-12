@@ -1,0 +1,114 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20rem;
+  background-color: var(--gray-700);
+}
+
+.header > img {
+  width: 12.6rem;
+}
+
+.container {
+  max-width: calc(73.6rem + (var(--space-5) * 2));
+  padding-left: var(--space-5);
+  padding-right: var(--space-5);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form {
+  transform: translateY(-50%);
+}
+
+.form > div {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.formErrorMessage {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  color: var(--danger);
+  font-size: var(--text-sm);
+  margin-top: var(--space-2);
+}
+
+.input {
+  background: var(--gray-500);
+  border: 0;
+  border-radius: 0.8rem;
+  box-shadow: 0 0 0 1px var(--gray-700);
+  color: var(--gray-100);
+  width: 100%;
+  height: 5.4rem;
+  padding: 0 var(--space-4);
+  outline: 0;
+}
+
+.input.isError {
+  box-shadow: 0 0 0 1px var(--danger);
+}
+
+.input:hover,
+.input:focus {
+  box-shadow: 0 0 0 1px var(--blue-dark);
+}
+
+.input::placeholder {
+  color: var(--gray-300);
+}
+
+.button {
+  background: var(--blue-dark);
+  border: 0;
+  border-radius: 0.8rem;
+  color: var(--gray-100);
+  font-size: var(--text-sm);
+  font-weight: var(--font-bold);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  height: 5.4rem;
+  padding: 0 var(--space-4);
+  transition: background-color 0.2s;
+}
+
+.button:hover,
+.button:focus {
+  background: var(--blue);
+}
+
+.headerList {
+  display: flex;
+  aling-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-5);
+}
+
+.headerList > strong {
+  display: flex;
+  aling-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+}
+
+.headerList > strong:first-child {
+  color: var(--blue);
+}
+
+.headerList > strong:last-child {
+  color: var(--purple);
+}
+
+.headerList > strong span {
+  background: var(--gray-400);
+  border-radius: 999px;
+  color: var(--gray-100);
+  font-size: var(--text-xs);
+  padding: 0 var(--space-2);
+}
